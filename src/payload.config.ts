@@ -57,10 +57,10 @@ export default buildConfig({
           group: 'Forms',
         },
         fields: ({ defaultFields }) => [
-          ...defaultFields, // Keep all default fields...
+          ...defaultFields, 
           // {
           //   name: 'tenant',
-          //   type: 'relationship', // Add a new field to relate each form to a tenant
+          //   type: 'relationship', 
           //   relationTo: 'tenants',
           //   required: true,
           // },
