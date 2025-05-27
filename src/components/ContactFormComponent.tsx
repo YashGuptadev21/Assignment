@@ -61,7 +61,7 @@ const ContactFormComponent = ({ formId }: { formId: string }) => {
       <form className="space-y-6" onSubmit={handleSubmit} ref={formRef}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {form?.fields?.map((field: any) => {
-            if (field.name === 'message') return null // We'll handle message separately below
+            if (field.name === 'message') return null 
             return (
               <div key={field.id} className="flex flex-col">
                 <label htmlFor={field.name} className="text-sm font-medium mb-1">
@@ -79,7 +79,7 @@ const ContactFormComponent = ({ formId }: { formId: string }) => {
           })}
         </div>
 
-        {/* Message field separately below */}
+      
         {form?.fields?.find((field: any) => field.name === 'message') && (
           <div className="flex flex-col">
             <label htmlFor="message" className="text-sm font-medium mb-1">
